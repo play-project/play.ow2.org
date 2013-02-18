@@ -1,0 +1,47 @@
+---
+layout: page
+title: Members
+tagline:
+author: [chamerling, rstuehmer]
+---
+
+<p>
+<div align="center">
+  <img class="img-polaroid" src="http://www.play-project.eu/images/Karlsruhe.jpg"/>
+</div>
+</p>
+
+<p>
+{% for auth in page.author %}
+  {% assign author = site.authors[auth] %}
+  
+  <div class="well">
+  <div class="media">
+    <a class="pull-left" href="#">
+      {% if author.gravatar %}
+      <img class="media-object img-circle" src="http://en.gravatar.com/avatar/{{author.gravatar}}&amp;size=60">
+      {% else if author.avatar %} 
+      <img class="media-object img-circle" src="{{author.avatar}}">
+      {% endif %}      
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">{{author.name}}</h4>
+      {% if author.company %}
+      <h5 class="media-heading"><a target="_blank" href="{{author.company_url}}">{{author.company}}</a></h5>
+      {% endif %}
+      {% if author.webpage %}
+      <li><a href="{{author.webpage}}">Web</a></li>
+      {% endif %}
+      {% if author.github %}
+      <li><a href="http://github.com/{{author.github}}">Github</a></li>
+      {% endif %}
+      {% if author.twitter %}
+      <li><a href="http://twitter.com/{{author.twitter}}">Twitter</a></li>
+      {% endif %}
+    </div>
+  </div> 
+</div>
+  
+{% endfor %}
+</p>
+
