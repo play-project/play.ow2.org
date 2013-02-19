@@ -2,6 +2,10 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
+require 'net/ssh'
+require 'net/scp'
+require 'fileutils'
+require 'stringex'
 
 SOURCE = "."
 CONFIG = {
@@ -302,6 +306,35 @@ end
 def get_stdin(message)
   print message
   STDIN.gets.chomp
+end
+
+desc "Generate the Web site"
+task :generate do
+  puts "Generating the Web site under the _site folder..."
+  sh "jekyll --no-auto"
+  puts "Done!"
+end
+
+# Deployment variables
+hostname = 'jupiter.objectweb.org'
+path = '/var/lib/gforge/chroot/home/groups/play/htdocs/'
+
+#
+# Need ow2login and ow2password parameters
+# 
+desc "Deploy the Web site"
+task :deploy => :generate do
+  login = ENV['ow2login']
+  password = ENV['ow2password']
+  raise "Please provide valid OW2 credentials" if !login or !password
+
+  puts "Deploying the Web site to play.ow2.org as #{login}..."    
+  cd '_site'
+  Net::SSH.start( hostname, login, :password => password ) do |ssh|
+    ssh.scp.upload!( '.', path, :recursive => true )
+  end
+  puts "Deployed!"
+  puts "=====> Please go to http://forge.ow2.org/project/admin/?group_id=424 and push the 'Push project Web site to production Now' button! <====="
 end
 
 #Load custom rake scripts
