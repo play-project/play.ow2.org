@@ -1,0 +1,26 @@
+#schema_play_03 a img{width:224px;height:39px;background: url(/assets/images/schema/schema_play_03.png) no-repeat;}
+#schema_play_03 a img:hover{width:224px;height:39px;background: url(/assets/images/schema/schema_play_03_hover.png) no-repeat;}
+#schema_play_05 a img{width:223px;height:39px;background: url(/assets/images/schema/schema_play_05.png) no-repeat;}
+#schema_play_05 a img:hover{width:223px;height:39px;background: url(/assets/images/schema/schema_play_05_hover.png) no-repeat;}
+#schema_play_08 a img{width:223px;height:89px;background: url(/assets/images/schema/schema_play_08.png) no-repeat;}
+#schema_play_08 a img:hover{width:223px;height:89px;background: url(/assets/images/schema/schema_play_08_hover.png) no-repeat;}
+#schema_play_10 a img{width:223px;height:89px;background: url(/assets/images/schema/schema_play_10.png) no-repeat;}
+#schema_play_10 a img:hover{width:223px;height:89px;background: url(/assets/images/schema/schema_play_10_hover.png) no-repeat;}
+#schema_play_12 a img{width:72px;height:251px;background: url(/assets/images/schema/schema_play_12.png) no-repeat;}
+#schema_play_12 a img:hover{width:72px;height:251px;background: url(/assets/images/schema/schema_play_12_hover.png) no-repeat;}
+#schema_play_12011 a img{width:456px;height:39px;background: url(/assets/images/schema/schema_play_12-11.png) no-repeat;}
+#schema_play_12011 a img:hover{width:456px;height:39px;background: url(/assets/images/schema/schema_play_12-11_hover.png) no-repeat;}
+#schema_play_14 a img{width:132px;height:97px;background: url(/assets/images/schema/schema_play_14.png) no-repeat;}
+#schema_play_14 a img:hover{width:132px;height:97px;background: url(/assets/images/schema/schema_play_14_hover.png) no-repeat;}
+#schema_play_16 a img{width:173px;height:97px;background: url(/assets/images/schema/schema_play_16.png) no-repeat;}
+#schema_play_16 a img:hover{width:173px;height:97px;background: url(/assets/images/schema/schema_play_16_hover.png) no-repeat;}
+#schema_play_18 a img{width:132px;height:97px;background: url(/assets/images/schema/schema_play_18.png) no-repeat;}
+#schema_play_18 a img:hover{width:132px;height:97px;background: url(/assets/images/schema/schema_play_18_hover.png) no-repeat;}
+#schema_play_20 a img{width:456px;height:39px;background: url(/assets/images/schema/schema_play_20.png) no-repeat;}
+#schema_play_20 a img:hover{width:456px;height:39px;background: url(/assets/images/schema/schema_play_20_hover.png) no-repeat;}
+#schema_play_22 a img{width:224px;height:39px;background: url(/assets/images/schema/schema_play_22.png) no-repeat;}
+#schema_play_22 a img:hover{width:224px;height:39px;background: url(/assets/images/schema/schema_play_22_hover.png) no-repeat;}
+#schema_play_24 a img{width:224px;height:39px;background: url(/assets/images/schema/schema_play_24.png) no-repeat;}
+#schema_play_24 a img:hover{width:224px;height:39px;background: url(/assets/images/schema/schema_play_24_hover.png) no-repeat;}
+
+table#schema, table#schema tr, table#schema tr td, table#schema tr td img  {margin:0px;padding:0px; line-height:0px;}
