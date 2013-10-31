@@ -28,11 +28,11 @@
     <![endif]-->
 
     <!-- Le styles -->
+    <link href="/assets/css/schema.css" rel="stylesheet" media="all" type="text/css">
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/prettify.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/bootstrap/css/ow2-main.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/responsive.min.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/assets/images/favicon.png">
@@ -56,6 +56,23 @@
         <a class="brand" href="{{site.production_url}}">{{ site.title }}</a>
           <ul class="nav">
             <!--<li><a href="{{site.production_url}}/news.html">News</a></li>-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{site.production_url}}/pages/components/adaptationrecommendation.html">Adaptation Recommendation</a></li>
+                <li><a href="{{site.production_url}}/pages/components/analyticsengine.html">Analytics Engine</a></li>
+                <li><a href="{{site.production_url}}/pages/components/businessmonitoring.html">Business Monitoring</a></li>
+                <li><a href="{{site.production_url}}/pages/components/communications.html">Communications</a></li>
+                <li><a href="{{site.production_url}}/pages/components/elasticstorage.html">Elastic Storage</a></li>
+                <li><a href="{{site.production_url}}/pages/components/eventrecommendation.html">Event Recommendation</a></li>
+                <li><a href="{{site.production_url}}/pages/components/platformgovernance.html">Platform Governance</a></li>
+                <li><a href="{{site.production_url}}/pages/components/restapi.html">REST API</a></li>
+                <li><a href="{{site.production_url}}/pages/components/serviceintegration.html">Service Integration</a></li>
+                <li><a href="{{site.production_url}}/pages/components/socialconnectors.html">Social Connectors</a></li>
+                <li><a href="{{site.production_url}}/pages/components/technicalmonitoring.html">Technical Monitoring</a></li>
+                <li><a href="{{site.production_url}}/pages/components/telcoconnectors.html">Telco Connectors</a></li>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -82,7 +99,7 @@
     </div>
   </div>
 
-  <div class="container-fluid" width="800">
+  <div class="container-fluid" width="1000">
     <div class="row-fluid">
       <div class="span9">
         {{ content }}
