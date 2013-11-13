@@ -4,6 +4,8 @@ title: Elastic Storage
 tagline:
 ---
 
+<div class="row">
+  <div class="span4 offset1">
 <p>
 	The EventCloud is comprised of a a set of independent P2P overlay networks architecture along a Content Addressable Network architecture (CAN) ready to be deployed onto high-performance, fault tolerant and elastic  physical  infrastructure (grids, clouds), i.e. whose nodes acquisition and relinquishment can be dynamic and subject to a pay-per-use mode. Each node participating in the overlay networks is responsible for managing the storage of subsets of the events (in Jena RDF stores by default), and help in matching potential looked up events and disseminating them in a collaborative manner to the interested parties.</p>
 	<p>In practice, the EventCloud component is offering a publish/subscribe API further used by external bricks acting as clients of the EventCloud (such as the DCEP, and the DSB). Clients of the EventCloud are able to subscribe, through patterns, to events they are interested in using a subset of the SPARQL language, and receive notifications of RDF described events upon matching. Clients can also subscribe to and publish RDF events using the WS-Notification standards by using web service endpoints deployed for these purposes. It also provide proxy for the synchronous put/get API (pull mode). 
@@ -11,8 +13,13 @@ tagline:
 	<p>The figure illustrates the EventClouds manager web page in which we can distinguish the different running EventClouds and for each of them we can have the list of proxies comprising the pub/sub (WS-Notification) proxies endpoints, pub/sub (RDF) proxies endpoints and the put/get proxies endpoints. The cubes in the figure illustrate the CAN P2P storage overlay with different zones according to RDF Triples that form events. 
 </p>
 
-<center>
-<img src="./img/ec.png"/>
-</center>
-
 <p>For the fault tolerance feature, the EventCLoud uses a recovery mechanism based by configuring snapshots to be taken during its deployment. The configuration of such snapshot defines some checkpoints for which the EventCloud stores its state and data in order to be able to recover them after a possible failure.</p>
+</div>
+<div class="span3 offset1">
+
+<center>
+<img height="450px" src="./img/ec.png"/>
+</center></div>
+</div>
+
+
