@@ -5,3 +5,15 @@ tagline:
 ---
 
 <p>The PLAY REST API allows external applications to connect with the Platform. It provides OAuth 2.0 identification and authentication as well as event base communication.</p>
+
+<p>The governance component is composed of several services which are all exposed using Web services SOAP/HTTP or REST:
+	<ul>
+		<li>SOAP-based interfaces are well suited for internal use: when other platform components want to communicate with the governance one and vice-versa.</li>
+		<li>The REST approach is in line with the external user interaction for the final end user API. This part will be described in the following section about User Management.</li>
+	</ul>
+</p>
+
+<p>According to the user properties, groups he belongs to, permissions linked to groups and streams, the user management module can deduce resources each user has access to. The current User Platform API (also named User API) allows users registered in the platform to access to the Play platform resources in an authenticated way.</p>
+	
+<p>Users are able to manipulate directly streams/topics, patterns, subscriptions and publish data to streams with the help of the User API with a REST style approach.
+</p>

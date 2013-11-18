@@ -4,15 +4,23 @@ title: Technical Monitoring
 tagline:
 ---
 
-<p>Provides information about platform status and running applications.
-Technical monitoring is dedicated to the platform administrator whereas the business monitoring is dedicated to application developers.
+<div class="row">
+  <div class="span4 offset1">
+<p>Monitoring distributed systems such as the PLAY platform is a huge and very challenging task. The targets of this component addresses the monitoring of the platform components themselves and monitor the whole platform to ensure that the quality of service (QoS) offered by the platform is good enough according to some defined requirements. We distinguish two types of monitoring:
 
 <ul>
 	<li>Technical monitoring: check and verify non-functional information of each PLAY platform component,</li>
 	<li>Business monitoring: verify the behavior of the platform by sensing metrics and by ensuring contracts between clients and service providers.</li>
 </ul>
+</p>
 
-<center>
-<img src="./img/busi-mon.png" style="float:left;">
-<img src="./img/tech-mon.png" style="float:left;">
-</center>
+<p>
+The monitoring also provides some management and user a frontend that directly fulfills requirements described above. As governance web applications (Play.gov and Play.me), monitoring frontend is also provided has a web application Play.mon. Play.mon, more generally called geasyBSMViewer, allows managers to monitor and display all sensors.
+</p>
+
+
+</div>
+
+ <div class="span2"><img height="180px" src="./img/busi-mon.png"></div>
+ <div class="span2 offset1"><img height="200px" src="./img/tech-mon.png"></div>
+</div>
